@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calc by Will</title>
+</head>
+<body>
+    <main>
+
+        <div class="calc">
+            <section class="options">
+                <img src="./assets/images/arrow-left-image.svg">
+                <img src="./assets/images/gears-image.svg">
+            </section><!--options-->
+
+            <section class="display">
+                <div class="history">
+                    <span id="history"></span>
+                </div><!--history-->
+                <div class="current">
+                    <span id="typer"></span>
+                </div><!--current-->
+            </section><!--display-->
+
+            <section class="keys">
+                <section class="keys_group">
+                    <button onclick="setEmpty()" class="key special">AC</button>
+                    <button onclick="soma()" class="key special">+/-</button>
+                    <button onclick="setInto('%')" class="key special">%</button>
+                    <button onclick="setInto('/')" class="key special">/</button>
+                </section>
+                <section class="keys_group">
+                    <button onclick="setInto('7')" class="key">7</button>
+                    <button onclick="setInto('8')" class="key">8</button>
+                    <button onclick="setInto('9')" class="key">9</button>
+                    <button onclick="setInto('*')" class="key special">x</button>
+                </section>
+                <section class="keys_group">
+                    <button onclick="setInto('4')" class="key">4</button>
+                    <button onclick="setInto('5')" class="key">5</button>
+                    <button onclick="setInto('6')" class="key">6</button>
+                    <button onclick="setInto('-')" class="key special">-</button>
+                </section>
+                <section class="keys_group">
+                    <button onclick="setInto('1')" class="key">1</button>
+                    <button onclick="setInto('2')" class="key">2</button>
+                    <button onclick="setInto('3')" class="key">3</button>
+                    <button onclick="setInto('+')" class="key special">+</button>
+                </section>
+                <section class="keys_group">
+                    <button onclick="eraseBack()" class="key"><img src="./assets/images/delete-left-image.svg"></button>
+                    <button onclick="setInto('0')" class="key">0</button>
+                    <button onclick="setInto('.')" class="key">.</button>
+                    <button onclick="getEqual()" class="key equal">=</button>
+                </section>
+            </section><!--keys-->
+        </div><!--calc-->
+
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
