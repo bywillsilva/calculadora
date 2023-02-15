@@ -43,7 +43,7 @@ function setInto(item) {
             return setEmpty(0)
         }
     }
-    typer.innerText = item
+    typer.innerText += item
 }
 
 function getEqual(item) {
