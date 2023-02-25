@@ -24,6 +24,7 @@ body {
     background-color: var(--dark);
     user-select: none;
     overflow: hidden;
+    user-zoom: none;
 }
 
 .calc {
