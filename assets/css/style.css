@@ -41,11 +41,11 @@ body {
     box-shadow: 2px 2px 5px var(--black);
 }
 
-@media (max-width: 370px) {
+@media (max-width: 1080px) {
     body {
         display: block;
     }
-    
+
     .calc {
         margin: 0;
         min-width: 270px;
