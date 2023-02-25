@@ -41,17 +41,18 @@ body {
     box-shadow: 2px 2px 5px var(--black);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     body {
         display: block;
     }
+    
     .calc {
         margin: 0;
-        width: 100%;
         min-width: 270px;
+        width: 100%;
+
         border: none;
         box-shadow: none;
-        
     }
 }
 
