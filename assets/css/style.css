@@ -122,6 +122,13 @@ body {
     border: none;
 }
 
+@media (max-width: 1080px) {
+    .key {
+        width: 55px;
+        height: 55px;
+    }
+}
+
 .key:hover {
     transform: scale(1.1, 1.1);
     transition: ease 0.3s;
