@@ -47,7 +47,7 @@ body {
     }
 
     .calc {
-        margin-top: 20px;
+        margin: 0;
         min-width: 270px;
         width: 100%;
 
@@ -124,6 +124,8 @@ body {
 
 @media (max-width: 1080px) {
     .key {
+        font-size: 20px;
+
         width: 55px;
         height: 55px;
     }
