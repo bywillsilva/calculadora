@@ -1,5 +1,5 @@
-const typer = document.getElementById("typer");
-const hist = document.getElementById("history");
+const typer = document.querySelector("#typer");
+const hist = document.querySelector("#history");
 const body = document.querySelector("body");
 
 body.addEventListener("keydown", (e) => {
@@ -12,7 +12,6 @@ body.addEventListener("keydown", (e) => {
     if (e.code == "NumpadAdd") {
         setInto("+");
     }
-
     if (e.code == "NumpadSubtract") {
         setInto("-");
     }
@@ -35,7 +34,13 @@ body.addEventListener("keydown", (e) => {
 
 function setInto(item) {
     if (typer.textContent.length < 8) {
-        if (item == "+" || item == "-" || item == "*" || item == "/" || item == "%") {
+        if (
+            item == "+" ||
+            item == "-" ||
+            item == "*" ||
+            item == "/" ||
+            item == "%"
+        ) {
             if (hist.textContent.includes(item)) {
                 return getEqual(item);
             }
